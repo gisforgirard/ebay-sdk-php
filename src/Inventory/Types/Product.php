@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Inventory\Types;
  * @property string $subtitle
  * @property string $title
  * @property string[] $upc
- * @property string[] $epid
+ * @property string $epid
  */
 class Product extends \DTS\eBaySDK\Types\BaseType
 {
@@ -92,7 +92,7 @@ class Product extends \DTS\eBaySDK\Types\BaseType
         ],
         'epid' => [
             'type' => 'string',
-            'repeatable' => true,
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'epid'
         ]
